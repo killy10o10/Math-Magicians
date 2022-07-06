@@ -1,27 +1,86 @@
-body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --ash: #858694;
+  --orange: #f5913e;
+  --dark: #131a26;
+  --light: #e0e0e0;
+  --white: #fff;
+  --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background: #eee;
+  color: var(--dark);
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  border-radius: 0%;
+}
+
+.calc-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  box-shadow: var(--box-shadow);
+}
+
+.calc-input {
+  height: 50px;
+  font-size: 16px;
+  background: var(--ash);
+  color: var(--white);
+  padding: 5px;
+  text-align: right;
+}
+
+.calc-input::placeholder {
+  color: var(--white);
+}
+
+.btn-contain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2px;
+  row-gap: 2px;
+  padding: 1px;
+}
+
+.btn-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 10px;
+  background: var(--light);
+}
+
+.btn-div:nth-child(19) .btn,
+.btn-div:nth-child(4n+0) .btn {
+  background: var(--orange);
+}
+
+.btn-div:nth-child(17) {
+  grid-column: 1/3;
 }
