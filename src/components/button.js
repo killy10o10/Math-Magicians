@@ -3,10 +3,10 @@ import React from 'react';
 
 class Button extends React.PureComponent {
   render() {
-    const { btnName } = this.props;
+    const { btnName, event } = this.props;
     return (
       <div className="btn-div">
-        <button type="button" className="btn">{btnName}</button>
+        <button type="button" className="btn" onClick={event}>{btnName}</button>
       </div>
     );
   }
@@ -14,6 +14,7 @@ class Button extends React.PureComponent {
 
 Button.propTypes = {
   btnName: PropTypes.string.isRequired,
+  event: PropTypes.func.isRequired,
 };
 
 export default Button;
