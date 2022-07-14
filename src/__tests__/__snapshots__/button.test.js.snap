@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing if the buttons are displayed button is rendered 1`] = `
+<div
+  className="btn-div"
+>
+  <button
+    className="btn"
+    type="button"
+  />
+</div>
+`;
