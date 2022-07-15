@@ -15,6 +15,7 @@
 - JavaScript ES6 
 - React
 
+[Live Version](https://quami-math-magicians.netlify.app)
 
 ## Getting Started
 
