@@ -15,7 +15,8 @@
 - JavaScript ES6 
 - React
 
-[Live Version](https://deploy-preview-9--mathsmagicianskilly.netlify.app)
+[Netlify link](https://mathsmagicianskilly.netlify.app/)
+[Heroku link](https://killy-math-magicians.herokuapp.com/)
 
 ## Getting Started
 
